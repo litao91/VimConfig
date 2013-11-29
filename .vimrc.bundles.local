@@ -1,1 +1,5 @@
-Bundle 'Rip-Rip/clang_complete'
+Bundle 'vim-scripts/Lucius'
+Bundle 'jcf/vim-latex'
+Bundle 'kakkyz81/evervim'
+"Bundle 'davidhalter/jedi-vim'
+Bundle 'altercation/vim-colors-solarized'

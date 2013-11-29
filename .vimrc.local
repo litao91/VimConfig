@@ -1,8 +1,30 @@
-set nohlsearch
-set nonu
-let g:autoclose_on = 0
-set t_Co=256
-set tw=80
-set wrap
-let g:nerdtree_tabs_open_on_gui_startup = 0
-let g:nerdtree_tabs_smart_startup_focus = 0
+"if has('gui_running')
+    "colorscheme zenburn
+"else
+    colorscheme lucius
+    LuciusBlackLowContrast
+"endif
+set textwidth=74
+"set guifont=Monospace\ 10
+set guifont=Inconsolata\ Medium\ 14
+let g:tex_conceal="g"
+let g:loaded_AutoClose = 0
+autocmd FileType matlab set nospell
+let g:Tex_DefaultTargetFormat='pdf'
+"set termencoding=utf-8
+"set encoding=prc
+set guioptions-=lrb
+"set guioptions-=l
+set guioptions=notools
+let g:syntastic_ignore_files = ['py']
+"let g:airline_theme='badwolf'
+"let g:airline_linecolumn_prefix = 'LN '
+"let g:airline_branch_prefix = '⎇ '
+let g:airline_powerline_fonts= 0
+UnBundle 'spf13/vim-autoclose'
+UnBundle 'amirh/HTML-AutoCloseTag'
+UnBundle 'myusuf3/numbers.vim'
+let g:evervim_devtoken='S=s45:U=47fe2c:E=148543ffd1b:C=140fc8ed11f:P=1cd:A=en-devtoken:V=2:H=a3b4961e8bbb0918c55055ea82cc4d69'
+let g:pymode_lint_checker = "pyflakes"
+set background=dark
+colorscheme solarized
